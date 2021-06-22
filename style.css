@@ -1,0 +1,81 @@
+.env {
+    position: absolute;
+    transition: transform 0.5s, top 0.5s, left 0.5s ;
+}
+
+.letter{
+    position: absolute;
+    transition: transform 0.5s, top 0.5s , left 0.5s;
+}
+
+#container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 3s;
+}
+
+#game-container {
+    border: 0.5rem solid;
+    width: 50vh;
+    height: 50vh;
+    border-radius: 12px;
+    transition: all 1s;
+}
+
+.letter-box {
+  display: inline-flex;
+  height: auto;
+  /*overflow: auto;*/
+  /*width: 5vh;*/
+  transition: all 0.2s;
+}
+
+.letter-all {
+    display: inline-block;
+    transition: all 0.8s;
+    top:  100%;
+    left: 0%;
+    margin-top: 10px;
+   
+}
+
+.letter-all.end {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) scale(4);
+}
+
+.losange {
+    position: absolute;
+    opacity: 0;
+    transition: all 2s;
+    bottom: -110vh;
+}
+
+.active {
+    bottom: 12%;
+    right: -3%;
+    opacity: 1;
+    transform: rotate(720deg)
+}
+
+@keyframes shake {
+    from { transform: rotate(-10deg); }
+    to   { transform: rotate(10deg); }
+}
+
+@keyframes jump {
+    from {
+        transform: rotate(-10deg) translateY(-10px);
+       
+    }
+  
+    to {
+        transform: rotate(10deg);
+        
+    }
+}
