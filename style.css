@@ -8,6 +8,15 @@
     transition: transform 0.5s, top 0.5s , left 0.5s;
 }
 
+.text {
+    text-align: center;
+}
+
+p {
+    font-family: 'Rambla', serif;
+    /*font-size: px;*/
+  }
+
 #container {
     position: fixed;
     top: 50%;
